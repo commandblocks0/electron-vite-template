@@ -1,0 +1,18 @@
+{
+  "name": "%NAME%",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "electron-dev": "cross-env NODE_ENV=dev electron .",
+    "start": "npm-run-all --parallel dev electron-dev",
+    "build": "vite build && electron-builder"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "electron": "^39.1.1",
+    "electron-builder": "^26.0.12",
+    "npm-run-all": "^4.1.5",
+    "vite": "^7.2.2"
+  }
+}
